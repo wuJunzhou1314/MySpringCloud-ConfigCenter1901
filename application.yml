@@ -5,13 +5,13 @@ spring:
 ---
 #声明是开发环境
 spring: 
-  config: 
-    active: 
-      on-profile: dev
+ profiles: dev
+ application: 
+   name: sc-configcenter-dev
 ---
 #声明是生产环境
 spring: 
-  config: 
-    active: 
-      on-profile: prod
+  profiles: prod
+  application: 
+    name: sc-configcenter-prod
 #以UTF-8格式保存文件
